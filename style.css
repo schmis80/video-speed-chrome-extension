@@ -1,0 +1,22 @@
+.speed-button {
+  z-index: 1000;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0s ease-in-out;
+  transition-delay: 0;
+}
+
+.speed-container:hover .speed-button {
+  opacity: 1;
+}
+
+@keyframes nodeInserted {  
+  from { opacity: 0.99; }
+  to { opacity: 1; }  
+}
+
+video {
+  animation-duration: 0.001s;
+  animation-name: nodeInserted;
+}
+
